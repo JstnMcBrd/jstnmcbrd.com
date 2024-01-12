@@ -1,0 +1,12 @@
+{
+	"include": ["src"],
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"jsx": "react-jsx",
+		"strict": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+	},
+}
