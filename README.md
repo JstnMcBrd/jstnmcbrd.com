@@ -1,4 +1,5 @@
 # jstnmcbrd.com
+[![Website Status](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml/badge.svg)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
 
 ## About
 
