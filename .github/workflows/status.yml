@@ -1,0 +1,15 @@
+name: Website Status
+# Checks whether the website is active and working on a regular schedule
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # once a day
+  workflow_dispatch:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Request website
+          run: curl https://${{ secrets.WEBSITE_DOMAIN }}
