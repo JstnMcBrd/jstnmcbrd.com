@@ -31,6 +31,7 @@ jobs:
           host: ${{ secrets.WEBSITE_DOMAIN }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
-          source: "dist/."
+          source: "dist/*"
+          strip-components: 1
           target: ${{ secrets.SSH_PATH }}
           rm: true
