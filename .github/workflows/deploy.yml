@@ -1,4 +1,4 @@
-name: Publish
+name: Deploy
 # Deploys the website whenever changes are merged to main
 
 on:
