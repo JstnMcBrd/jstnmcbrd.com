@@ -32,6 +32,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           source: "dist/*"
-          strip-components: 1
+          strip_components: 1
           target: ${{ secrets.SSH_PATH }}
           rm: true
