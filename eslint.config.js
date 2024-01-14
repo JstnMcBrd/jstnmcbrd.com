@@ -21,6 +21,7 @@ export default [
 			globals: {
 				...globals.node,
 				...globals.es2021, // es2022 is not available (https://github.com/sindresorhus/globals/issues/183)
+				NodeJS: true,
 			},
 		},
 		rules: {
@@ -30,8 +31,10 @@ export default [
 
 			// Overrides
 			'@stylistic/indent': ['error', 'tab'],
+			'@stylistic/indent-binary-ops': ['error', 'tab'],
 			'@stylistic/no-tabs': 0,
 			'@stylistic/semi': ['error', 'always'],
+			'@stylistic/member-delimiter-style': 'error',
 
 			// Additions
 			'curly': 'error',
