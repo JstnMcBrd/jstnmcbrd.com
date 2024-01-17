@@ -21,6 +21,7 @@ export default [
 			globals: {
 				...globals.node,
 				...globals.es2021, // es2022 is not available (https://github.com/sindresorhus/globals/issues/183)
+				...globals.browser,
 				NodeJS: true,
 			},
 		},
@@ -72,9 +73,6 @@ export default [
 					jsx: true,
 				},
 			},
-			globals: {
-				...globals.browser,
-			},
 		},
 		settings: {
 			react: {
@@ -88,6 +86,7 @@ export default [
 
 			// Overrides
 			'@stylistic/jsx-indent': ['error', 'tab'],
+			'@stylistic/jsx-indent-props': ['error', 'tab'],
 		},
 	},
 ];
