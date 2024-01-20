@@ -1,9 +1,0 @@
-/* Make the React root div take up the entire screen space and center all elements */
-#root {
-	display: flex;
-	place-items: center;
-	justify-content: center;
-	min-width: 100vw;
-	min-height: 100vh;
-	padding: 2rem;
-}
