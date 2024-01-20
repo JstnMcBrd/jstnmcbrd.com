@@ -25,6 +25,9 @@ export default [
 				NodeJS: true,
 			},
 		},
+		linterOptions: {
+			reportUnusedDisableDirectives: 'error',
+		},
 		rules: {
 			// Recommended
 			...js.configs.recommended.rules,
