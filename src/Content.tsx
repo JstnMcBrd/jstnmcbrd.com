@@ -15,9 +15,9 @@ export function Content() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<Container>
-			<Row>
-				<Col className="mx-auto" xs="auto">
+		<Container fluid>
+			<Row style={{ height: '100vh' }}>
+				<Col className="m-auto" xs="auto">
 					<Stack className="text-center" gap={4}>
 						<div>
 							<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
