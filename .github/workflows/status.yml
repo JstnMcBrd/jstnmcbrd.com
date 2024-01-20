@@ -1,4 +1,4 @@
-name: Website Status
+name: Website status
 # Checks whether the website is active and working on a regular schedule
 
 on:
