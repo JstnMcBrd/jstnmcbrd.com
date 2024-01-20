@@ -10,7 +10,7 @@ import { LinkedIn } from './svg/LinkedIn.js';
 
 import logo from './assets/zap.svg';
 
-const navLinks: { title: string; href: string }[] = [];
+const navLinks: { title: string; href: string }[] = []; // TODO
 
 const socials = [
 	{
