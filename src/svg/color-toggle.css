@@ -1,7 +1,0 @@
-svg.color-toggle path {
-	fill: black;
-}
-
-html[data-bs-theme="dark"] svg.color-toggle path {
-	fill: white;
-}
