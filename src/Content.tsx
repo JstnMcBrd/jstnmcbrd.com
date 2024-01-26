@@ -11,6 +11,7 @@ import viteLogo from './assets/vite.svg';
 
 import './Content.css';
 
+// TODO replace the Vite template with real content
 export function Content() {
 	const [count, setCount] = useState(0);
 
