@@ -8,16 +8,23 @@ import { ColorModeSelector } from './ColorModeSelector.js';
 
 import logo from '../assets/zap.svg';
 
+import './Header.css';
+
 const navLinks: { title: string; href: string }[] = []; // TODO
 
 export function Header() {
 	const breakpoint = 'sm';
 
 	return (
-		<Navbar fixed="top" expand={breakpoint} collapseOnSelect className="bg-body-tertiary border-bottom border-secondary-subtle">
+		<Navbar
+			fixed="top"
+			expand={breakpoint}
+			collapseOnSelect
+			className="bg-body-tertiary border-bottom border-secondary-subtle"
+		>
 			<Container fluid className="mx-1">
 				<Navbar.Brand href="/">
-					<img src={logo} width={24} height={24} title="Zap!" className="mb-1 me-2" />
+					<img src={logo} width={24} height={24} title="Zap!" className="mb-1 me-2 zap-hover-glow" />
 					Justin McBride
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />

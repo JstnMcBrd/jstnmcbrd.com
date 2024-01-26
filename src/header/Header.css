@@ -1,0 +1,9 @@
+.zap-hover-glow {
+	will-change: filter;
+	/* Make the glowing filter happen gradually */
+	transition: filter 100ms;
+}
+/* Give the logo a background glow when hovering over it */
+.zap-hover-glow:hover {
+	filter: drop-shadow(0 0 0.5em yellow);
+}
