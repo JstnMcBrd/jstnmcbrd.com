@@ -45,7 +45,7 @@ export function Header() {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="ms-auto">
+					<Nav className="ms-auto text-center">
 						{
 							navLinks.map(({ title, href }) => (
 								<Nav.Link key={title} href={href}>{title}</Nav.Link>
@@ -57,7 +57,7 @@ export function Header() {
 							<Row>
 								{
 									socials.map(({ title, href, icon }) => (
-										<Col key={title} xs="auto" className="px-2">
+										<Col key={title} className="px-2">
 											<Nav.Link
 												className="px-0"
 												href={href}

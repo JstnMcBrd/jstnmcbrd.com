@@ -32,7 +32,7 @@ export function ColorModeSelector({ breakpoint }: Props) {
 		return `d-${size}-none`;
 	}
 
-	const [localColorMode, setLocalColorMode] = useState<ColorMode>(getColorMode());
+	const [localColorMode, setLocalColorMode] = useState(getColorMode());
 
 	useEffect(() => {
 		setColorMode(localColorMode);
