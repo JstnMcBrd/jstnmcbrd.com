@@ -1,5 +1,9 @@
 /** Available color mode options */
-type ColorMode = 'auto' | 'light' | 'dark';
+export enum ColorMode {
+	Auto = 'auto',
+	Light = 'light',
+	Dark = 'dark',
+}
 
 const LOCAL_STORAGE_KEY = 'color-mode';
 
@@ -27,7 +31,7 @@ function getDarkSchemeMediaQuery(): MediaQueryList {
  * If it has not been set, returns 'auto' as the default.
  */
 export function getColorMode(): ColorMode {
-	return localStorage.getItem(LOCAL_STORAGE_KEY) as ColorMode | null ?? 'auto';
+	return localStorage.getItem(LOCAL_STORAGE_KEY) as ColorMode | null ?? ColorMode.Auto;
 }
 
 /**
@@ -37,8 +41,8 @@ export function getColorMode(): ColorMode {
  */
 export function setColorMode(colorMode: ColorMode): void {
 	localStorage.setItem(LOCAL_STORAGE_KEY, colorMode);
-	if (colorMode === 'auto') {
-		colorMode = getDarkSchemeMediaQuery().matches ? 'dark' : 'light';
+	if (colorMode === ColorMode.Auto) {
+		colorMode = getDarkSchemeMediaQuery().matches ? ColorMode.Dark : ColorMode.Light;
 	}
 	document.documentElement.setAttribute('data-bs-theme', colorMode);
 }
