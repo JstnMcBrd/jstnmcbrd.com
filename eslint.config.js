@@ -57,9 +57,12 @@ export default [
 			},
 		},
 		rules: {
+			// Recommended
 			...typescriptPlugin.configs['strict-type-checked'].rules,
 			...typescriptPlugin.configs['stylistic-type-checked'].rules,
 
+			// Overrides
+			'no-shadow': 0, // handled by TypeScript
 			'no-undef': 0, // handled by TypeScript
 		},
 	},
