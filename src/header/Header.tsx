@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { ColorModeSelector } from './ColorModeSelector.js';
 import { NavDivider } from './NavDivider.js';
 
 import { GitHub } from '../svg/GitHub.js';
@@ -58,7 +59,7 @@ export function Header() {
 									socials.map(({ title, href, icon }) => (
 										<Col key={title} xs="auto" className="px-2">
 											<Nav.Link
-												className={`p-0 py-${breakpoint}-2`}
+												className="px-0"
 												href={href}
 												target="_blank"
 												rel="noopener noreferrer"
@@ -71,6 +72,8 @@ export function Header() {
 								}
 							</Row>
 						</Container>
+						<NavDivider breakpoint={breakpoint} />
+						<ColorModeSelector breakpoint={breakpoint} />
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
