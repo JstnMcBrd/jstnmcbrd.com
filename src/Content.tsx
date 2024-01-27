@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
+const viteLogo = 'https://vitejs.dev/logo.svg';
 
 import './Content.css';
 
