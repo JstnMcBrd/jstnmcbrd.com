@@ -17,7 +17,7 @@ export function Content() {
 
 	return (
 		<Container fluid>
-			<Row style={{ height: '100vh' }}>
+			<Row className="vh-100" style={{ minHeight: '40rem' }}>
 				<Col className="m-auto" xs="auto">
 					<Stack className="text-center" gap={4}>
 						<div>
