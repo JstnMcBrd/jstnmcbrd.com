@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,7 +12,7 @@ import { React, Vite } from './Logos.js';
 import './Content.css';
 
 // TODO replace the Vite template with real content
-export function Content() {
+export function Content(): JSX.Element {
 	const [count, setCount] = useState(0);
 
 	return (

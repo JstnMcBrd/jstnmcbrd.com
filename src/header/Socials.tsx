@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,12 +24,12 @@ const socials = [
 	},
 ];
 
-export function Socials() {
+export function Socials(): JSX.Element {
 	return (
 		<Container>
 			<Row>
 				{
-					socials.map(({ title, href, icon }) => (
+					socials.map(({ title, href, icon: Icon }) => (
 						<Col key={title} className="px-2">
 							<Nav.Link
 								className="px-0"
@@ -37,7 +38,7 @@ export function Socials() {
 								rel="noopener noreferrer"
 								title={title}
 							>
-								{icon({ width: 20, height: 20 })}
+								<Icon width={20} height={20} />
 							</Nav.Link>
 						</Col>
 					))
