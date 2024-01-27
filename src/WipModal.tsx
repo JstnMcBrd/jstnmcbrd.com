@@ -1,8 +1,9 @@
+import type { JSX } from 'react';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 
-export function WipModal() {
+export function WipModal(): JSX.Element {
 	const [show, setShow] = useState(true);
 
 	function handleClose() {

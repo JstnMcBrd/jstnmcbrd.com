@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -11,7 +12,7 @@ import './Header.css';
 
 const navLinks: { title: string; href: string }[] = []; // TODO
 
-export function Header() {
+export function Header(): JSX.Element {
 	const breakpoint = 'sm';
 
 	return (

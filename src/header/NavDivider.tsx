@@ -1,15 +1,16 @@
+import type { JSX } from 'react';
 import Nav from 'react-bootstrap/Nav';
 
 interface Props {
 	breakpoint: string;
 }
 
-export function NavDivider({ breakpoint }: Props) {
-	function disappearWhenSmallerThan(size: string) {
+export function NavDivider({ breakpoint }: Props): JSX.Element {
+	function disappearWhenSmallerThan(size: string): string {
 		return `d-none d-${size}-block`;
 	}
 
-	function appearWhenSmallerThan(size: string) {
+	function appearWhenSmallerThan(size: string): string {
 		return `d-${size}-none`;
 	}
 
@@ -25,10 +26,10 @@ export function NavDivider({ breakpoint }: Props) {
 	);
 }
 
-function HorizontalRule({ className }: { className?: string }) {
+function HorizontalRule({ className }: { className?: string }): JSX.Element {
 	return <hr className={className}></hr>;
 }
 
-function VerticalRule({ className }: { className?: string }) {
+function VerticalRule({ className }: { className?: string }): JSX.Element {
 	return <div className={`vr ${className}`}></div>;
 }

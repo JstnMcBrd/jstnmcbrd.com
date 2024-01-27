@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
@@ -21,7 +22,7 @@ interface Props {
 	breakpoint: string;
 }
 
-export function ColorModeSelector({ breakpoint }: Props) {
+export function ColorModeSelector({ breakpoint }: Props): JSX.Element {
 	function disappearWhenSmallerThan(size: string) {
 		return `d-none d-${size}-block`;
 	}
@@ -36,12 +37,14 @@ export function ColorModeSelector({ breakpoint }: Props) {
 		setColorMode(localColorMode);
 	}, [localColorMode]);
 
-	function mainIcon() {
-		return colorModeIcons[localColorMode]({ width: 20, height: 20 });
+	function mainIcon(): JSX.Element {
+		const Icon = colorModeIcons[localColorMode];
+		return <Icon width={20} height={20} />;
 	}
 
-	function optionIcon(mode: ColorMode) {
-		return colorModeIcons[mode]({ width: 16, height: 16, className: 'me-2' });
+	function optionIcon(mode: ColorMode): JSX.Element {
+		const Icon = colorModeIcons[mode];
+		return <Icon width={16} height={16} className="me-2" />;
 	}
 
 	return (
