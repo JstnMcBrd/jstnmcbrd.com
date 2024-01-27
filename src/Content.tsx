@@ -6,8 +6,7 @@ import Stack from 'react-bootstrap/Stack';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-import reactLogo from './assets/react.svg';
-const viteLogo = 'https://vitejs.dev/logo.svg';
+import { React, Vite } from './Logos.js';
 
 import './Content.css';
 
@@ -21,12 +20,8 @@ export function Content() {
 				<Col className="m-auto" xs="auto">
 					<Stack className="text-center" gap={4}>
 						<div>
-							<a title="Vite" href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-								<img className="m-3 hover-glow" src={viteLogo} height="100px" />
-							</a>
-							<a title="React" href="https://react.dev" target="_blank" rel="noopener noreferrer">
-								<img className="m-3 hover-glow spin" src={reactLogo} height="100px" />
-							</a>
+							<Vite height={100} className="m-3 hover-glow" />
+							<React height={100} className="m-3 hover-glow spin" />
 						</div>
 						<h1 className="display-3 fw-bold">Vite + React</h1>
 						<Card className="p-4">
