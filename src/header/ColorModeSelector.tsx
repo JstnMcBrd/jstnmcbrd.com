@@ -5,9 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { ColorMode, getColorMode, setColorMode } from '../ColorMode.js';
 
-import { Auto } from '../svg/Auto.js';
-import { Light } from '../svg/Light.js';
-import { Dark } from '../svg/Dark.js';
+import { Auto } from '../icons/Auto.js';
+import { Light } from '../icons/Light.js';
+import { Dark } from '../icons/Dark.js';
 
 const colorModeIcons = {
 	[ColorMode.Auto]: Auto,

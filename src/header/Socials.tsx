@@ -3,9 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 
-import { GitHub } from '../svg/GitHub.js';
-import { TwitterX } from '../svg/TwitterX.js';
-import { LinkedIn } from '../svg/LinkedIn.js';
+import { GitHub } from '../icons/GitHub.js';
+import { TwitterX } from '../icons/TwitterX.js';
+import { LinkedIn } from '../icons/LinkedIn.js';
 
 const socials = [
 	{
