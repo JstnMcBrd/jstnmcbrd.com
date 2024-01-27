@@ -2,11 +2,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
+import { Zap } from '../Logos.js';
 import { NavDivider } from './NavDivider.js';
 import { Socials } from './Socials.js';
 import { ColorModeSelector } from './ColorModeSelector.js';
-
-import logo from '../assets/zap.svg';
 
 import './Header.css';
 
@@ -24,11 +23,11 @@ export function Header() {
 		>
 			<Container fluid className="mx-1">
 				<Navbar.Brand href="/">
-					<img src={logo} width={24} height={24} title="Zap!" className="mb-1 me-2 zap-hover-glow" />
+					<Zap width={24} height={24} className="mb-1 me-2 zap-hover-glow" />
 					Justin McBride
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
+				<Navbar.Toggle />
+				<Navbar.Collapse>
 					<Nav className="ms-auto text-center">
 						{
 							navLinks.map(({ title, href }) => (
