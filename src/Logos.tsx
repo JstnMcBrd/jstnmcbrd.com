@@ -6,11 +6,29 @@ interface Props {
 	className?: string;
 }
 
+import bootstrapLogo from './assets/bootstrap.svg';
+export function Bootstrap({ width, height, className }: Props): JSX.Element {
+	return (
+		<a title="Bootstrap" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+			<img alt="Bootstrap" src={bootstrapLogo} width={width} height={height} className={className} />
+		</a>
+	);
+}
+
 import reactLogo from './assets/react.svg';
 export function React({ width, height, className }: Props): JSX.Element {
 	return (
 		<a title="React" href="https://react.dev" target="_blank" rel="noopener noreferrer">
 			<img alt="React" src={reactLogo} width={width} height={height} className={className} />
+		</a>
+	);
+}
+
+import typescriptLogo from './assets/typescript.svg';
+export function TypeScript({ width, height, className }: Props): JSX.Element {
+	return (
+		<a title="TypeScript" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+			<img alt="TypeScript" src={typescriptLogo} width={width} height={height} className={className} />
 		</a>
 	);
 }

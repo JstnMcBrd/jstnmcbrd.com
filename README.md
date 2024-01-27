@@ -3,7 +3,7 @@
 
 ## About
 
-This is my personal website. It uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) written in [TypeScript](https://www.typescriptlang.org/).
+This is my personal website. It uses [Bootstrap](https://getbootstrap.com/), [React](https://react.dev/), and [Vite](https://vitejs.dev/), written in [TypeScript](https://www.typescriptlang.org/).
 
 ## Licensing
 

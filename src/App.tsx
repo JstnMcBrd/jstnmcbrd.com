@@ -1,7 +1,9 @@
-import { Header } from './header/Header';
-import { Content } from './Content';
-import { WipModal } from './WipModal';
 import type { JSX } from 'react';
+
+import { Header } from './header/Header.js';
+import { Content } from './Content.js';
+import { WipModal } from './WipModal.js';
+import { Footer } from './Footer.js';
 
 export function App(): JSX.Element {
 	return (
@@ -9,6 +11,7 @@ export function App(): JSX.Element {
 			<WipModal />
 			<Header />
 			<Content />
+			<Footer />
 		</>
 	);
 }
