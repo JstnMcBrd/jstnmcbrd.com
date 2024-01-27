@@ -26,8 +26,8 @@ export function Header() {
 					<Zap width={24} height={24} className="mb-1 me-2 zap-hover-glow" />
 					Justin McBride
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
+				<Navbar.Toggle />
+				<Navbar.Collapse>
 					<Nav className="ms-auto text-center">
 						{
 							navLinks.map(({ title, href }) => (
