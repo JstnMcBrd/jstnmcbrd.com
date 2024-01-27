@@ -21,11 +21,11 @@ export function Content() {
 				<Col className="m-auto" xs="auto">
 					<Stack className="text-center" gap={4}>
 						<div>
-							<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-								<img className="m-3 hover-glow" src={viteLogo} height="100" alt="Vite logo" />
+							<a title="Vite" href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+								<img className="m-3 hover-glow" src={viteLogo} height="100px" />
 							</a>
-							<a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-								<img className="m-3 hover-glow spin" src={reactLogo} height="100" alt="React logo" />
+							<a title="React" href="https://react.dev" target="_blank" rel="noopener noreferrer">
+								<img className="m-3 hover-glow spin" src={reactLogo} height="100px" />
 							</a>
 						</div>
 						<h1 className="display-3 fw-bold">Vite + React</h1>
