@@ -5,14 +5,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { ColorMode, getColorMode, setColorMode } from '../ColorMode.js';
 
-import { Auto } from '../icons/Auto.js';
-import { Light } from '../icons/Light.js';
-import { Dark } from '../icons/Dark.js';
+import { CircleHalf } from '../icons/CircleHalf.js';
+import { BrightnessHigh } from '../icons/BrightnessHigh.js';
+import { MoonStars } from '../icons/MoonStars.js';
 
 const colorModeIcons = {
-	[ColorMode.Auto]: Auto,
-	[ColorMode.Light]: Light,
-	[ColorMode.Dark]: Dark,
+	[ColorMode.Auto]: CircleHalf,
+	[ColorMode.Light]: BrightnessHigh,
+	[ColorMode.Dark]: MoonStars,
 };
 
 function capitalizeColorMode(colorMode: ColorMode): string {

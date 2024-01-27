@@ -4,7 +4,7 @@ interface Props {
 	className?: string;
 }
 
-export function Dark({ width, height, className }: Props) {
+export function MoonStars({ width, height, className }: Props) {
 	// https://icons.getbootstrap.com/icons/moon-stars/
 	return (
 		<svg xmlns="http://www.w3.org/2000/svg" className={className} width={width} height={height} fill="currentColor" viewBox="0 0 16 16">

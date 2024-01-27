@@ -4,7 +4,7 @@ interface Props {
 	className?: string;
 }
 
-export function Auto({ width, height, className }: Props) {
+export function CircleHalf({ width, height, className }: Props) {
 	// https://icons.getbootstrap.com/icons/circle-half/
 	return (
 		<svg xmlns="http://www.w3.org/2000/svg" className={className} width={width} height={height} fill="currentColor" viewBox="0 0 16 16">
