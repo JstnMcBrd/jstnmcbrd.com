@@ -5,9 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { ColorMode, getColorMode, setColorMode } from '../ColorMode.js';
 
-import { CircleHalf } from '../icons/CircleHalf.js';
-import { BrightnessHigh } from '../icons/BrightnessHigh.js';
-import { MoonStars } from '../icons/MoonStars.js';
+import { BrightnessHigh, CircleHalf, MoonStars } from '../Icons.js';
 
 const colorModeIcons = {
 	[ColorMode.Auto]: CircleHalf,
