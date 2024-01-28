@@ -39,7 +39,7 @@ export function ColorModeSelector({ breakpoint }: Props): JSX.Element {
 
 	function mainIcon(): JSX.Element {
 		const Icon = colorModeIcons[localColorMode];
-		return <Icon width={20} height={20} />;
+		return <span title="Color mode"><Icon width={20} height={20} /></span>;
 	}
 
 	function optionIcon(mode: ColorMode): JSX.Element {
