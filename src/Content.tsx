@@ -21,8 +21,8 @@ export function Content(): JSX.Element {
 				<Col className="m-auto" xs="auto">
 					<Stack className="text-center" gap={4}>
 						<div>
-							<Vite height={100} className="m-3 hover-glow" />
-							<React height={100} className="m-3 hover-glow spin" />
+							<Vite width={100} height={100} className="m-3 hover-glow" />
+							<React width={100} height={100} className="m-3 hover-glow spin" />
 						</div>
 						<h1 className="display-3 fw-bold">Vite + React</h1>
 						<Card className="p-4">
