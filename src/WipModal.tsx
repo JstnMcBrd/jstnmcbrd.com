@@ -12,7 +12,7 @@ export function WipModal(): JSX.Element {
 
 	return (
 		<>
-			<Modal centered show={show} onHide={handleClose} className="text-center" title="Work-in-progress">
+			<Modal centered show={show} onHide={handleClose} className="text-center">
 				<Modal.Header closeButton>
 					<Container className="ms-3">
 						<Modal.Title>⚠️ Work-in-progress ⚠️</Modal.Title>
