@@ -1,7 +1,7 @@
 /** Available color mode options */
 export enum ColorMode {
-	Auto = 'auto',
 	Light = 'light',
+	Auto = 'auto',
 	Dark = 'dark',
 }
 
