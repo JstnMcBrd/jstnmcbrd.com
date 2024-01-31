@@ -16,8 +16,6 @@ export default [
 			'@stylistic': stylistic,
 		},
 		languageOptions: {
-			sourceType: 'module',
-			ecmaVersion: 'latest',
 			globals: {
 				...globals.browser,
 			},
@@ -73,11 +71,7 @@ export default [
 			react: reactPlugin,
 		},
 		languageOptions: {
-			parserOptions: {
-				ecmaFeatures: {
-					jsx: true,
-				},
-			},
+			parserOptions: reactPlugin.configs['recommended'].parserOptions,
 		},
 		settings: {
 			react: {
