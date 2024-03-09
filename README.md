@@ -1,5 +1,7 @@
 # jstnmcbrd.com
+
 [![Website status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/status.yml?logo=github&label=Website%20status)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
+[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/validate.yml)
 
 ## About
 
