@@ -1,5 +1,5 @@
 # jstnmcbrd.com
-[![Website Status](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml/badge.svg)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
+[![Website status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/status.yml?logo=github&label=Website%20status)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
 
 ## About
 
