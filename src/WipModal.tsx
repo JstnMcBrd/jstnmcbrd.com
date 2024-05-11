@@ -11,7 +11,7 @@ export function WipModal(): JSX.Element {
 	}
 
 	return (
-		<Modal centered show={show} onHide={handleClose} className="text-center">
+		<Modal centered show={show} onHide={handleClose} className="text-center" aria-label="Work-in-progress modal">
 			<Modal.Header closeButton>
 				<Container className="ms-3">
 					<Modal.Title>⚠️ Work-in-progress ⚠️</Modal.Title>

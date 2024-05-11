@@ -13,17 +13,17 @@
 		"test": "echo \"No tests\""
 	},
 	"dependencies": {
-		"react": "^18.2.0",
+		"react": "^18.3.1",
 		"react-bootstrap": "^2.10.2",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^1.0.0",
-		"@types/react": "^18.2.74",
-		"@types/react-dom": "^18.2.24",
+		"@types/react": "^18.3.2",
+		"@types/react-dom": "^18.3.0",
 		"@vitejs/plugin-react-swc": "^3.6.0",
 		"eslint": "^8.57.0",
-		"typescript": "^5.4.4",
-		"vite": "^5.2.8"
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11"
 	}
 }
