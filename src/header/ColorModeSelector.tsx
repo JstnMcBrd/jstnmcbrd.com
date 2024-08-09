@@ -23,11 +23,11 @@ interface Props {
 }
 
 export function ColorModeSelector({ breakpoint }: Props): JSX.Element {
-	function disappearWhenSmallerThan(size: string) {
+	function disappearWhenSmallerThan(size: string): string {
 		return `d-none d-${size}-block`;
 	}
 
-	function appearWhenSmallerThan(size: string) {
+	function appearWhenSmallerThan(size: string): string {
 		return `d-${size}-none`;
 	}
 
