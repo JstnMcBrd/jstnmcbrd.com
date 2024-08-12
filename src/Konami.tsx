@@ -42,7 +42,7 @@ export function Konami(): JSX.Element {
 
 	const [show, setShow] = useState(false);
 
-	function handleClose() {
+	function handleClose(): void {
 		setShow(false);
 	}
 

@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 export function WipModal(): JSX.Element {
 	const [show, setShow] = useState(true);
 
-	function handleClose() {
+	function handleClose(): void {
 		setShow(false);
 	}
 
