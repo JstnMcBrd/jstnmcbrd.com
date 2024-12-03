@@ -35,8 +35,8 @@ export function TypeScript({ width, height, className }: Props): JSX.Element {
 
 export function Vite({ width, height, className }: Props): JSX.Element {
 	return (
-		<a title="Vite" href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-			<img alt="Vite" src="https://vitejs.dev/logo.svg" width={width} height={height} className={className} />
+		<a title="Vite" href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
+			<img alt="Vite" src="https://vite.dev/logo.svg" width={width} height={height} className={className} />
 		</a>
 	);
 }
