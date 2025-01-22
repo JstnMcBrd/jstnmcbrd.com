@@ -3,13 +3,16 @@ name: Website status
 
 on:
   schedule:
-    - cron: "0 0 * * *" # once a day
+    - cron: "0 0 * * *" # Once a day
   workflow_dispatch:
 
 jobs:
   status:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.WEBSITE_URL }}
 
     steps:
-        - name: Request website
-          run: curl https://${{ secrets.WEBSITE_DOMAIN }}
+      - name: Request website
+        run: curl ${{ vars.WEBSITE_URL }}

@@ -9,6 +9,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.WEBSITE_URL }}
 
     steps:
       - name: Checkout repository
@@ -28,10 +31,10 @@ jobs:
       - name: Deploy
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.WEBSITE_DOMAIN }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          host: ${{ secrets.SCP_HOST }}
+          username: ${{ secrets.SCP_USERNAME }}
+          password: ${{ secrets.SCP_PASSWORD }}
           source: "dist/*"
           strip_components: 1
-          target: ${{ secrets.SSH_PATH }}
+          target: ${{ secrets.SCP_TARGET }}
           rm: true
