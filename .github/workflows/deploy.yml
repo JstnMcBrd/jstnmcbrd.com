@@ -1,20 +1,33 @@
 name: Deploy
-# Deploys the website when new changes pass validation on main
+# Deploys the website whenever changes are merged to main
 
 on:
-  workflow_run:
-    workflows: ["Validate"]
-    types: [completed]
-    branches:
-      - main
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions: {}
 
 jobs:
+  checks:
+    if: ${{ github.event_name == 'push' }}
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      checks: read # Required for lewagon/wait-on-check-action
+
+    steps:
+      - name: Wait for checks to pass
+        uses: lewagon/wait-on-check-action@ccfb013c15c8afb7bf2b7c028fb74dc5a068cccc # v1.3.4
+        with:
+          ref: ${{ github.ref }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          running-workflow-name: checks
+          allowed-conclusions: success
+
   deploy:
-    # Only deploy if validation succeeds (or manually triggered)
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    needs: checks
 
     runs-on: ubuntu-latest
 
