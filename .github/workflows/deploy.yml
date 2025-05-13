@@ -1,15 +1,21 @@
 name: Deploy
-# Deploys the website whenever changes are merged to main
+# Deploys the website when new changes pass validation on main
 
 on:
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ["Validate"]
+    types: [completed]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions: {}
 
 jobs:
   deploy:
+    # Only deploy if validation succeeds (or manually triggered)
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
     runs-on: ubuntu-latest
 
     environment:
