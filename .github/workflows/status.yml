@@ -6,9 +6,12 @@ on:
     - cron: "0 0 * * *" # Once a day
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
   status:
     runs-on: ubuntu-latest
+
     environment:
       name: production
       url: ${{ vars.WEBSITE_URL }}
