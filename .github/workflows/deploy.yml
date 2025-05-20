@@ -1,5 +1,5 @@
 name: Deploy
-# Deploys the website whenever changes are merged to main
+description: Deploys the website whenever changes are merged to main
 
 on:
   push:
