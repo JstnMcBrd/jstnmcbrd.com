@@ -29,7 +29,7 @@ npm start
 Make sure to validate any changes before submitting them.
 ```sh
 npm run lint
-npm test
+npm run build
 ```
 
 ## Deployment
