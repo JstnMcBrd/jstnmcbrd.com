@@ -45,7 +45,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: .nvmrc
 
       - name: Install dependencies
         run: npm install
@@ -59,7 +59,7 @@ jobs:
           host: ${{ secrets.SCP_HOST }}
           username: ${{ secrets.SCP_USERNAME }}
           password: ${{ secrets.SCP_PASSWORD }}
-          source: "dist/*"
+          source: dist/*
           strip_components: 1
           target: ${{ secrets.SCP_TARGET }}
           rm: true

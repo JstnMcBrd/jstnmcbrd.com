@@ -3,7 +3,7 @@ name: Website status
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Once a day
+    - cron: 0 0 * * * # Once a day
   workflow_dispatch:
 
 permissions: {}
