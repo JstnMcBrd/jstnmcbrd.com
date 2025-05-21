@@ -1,4 +1,4 @@
-name: Website status
+name: Status
 description: Checks whether the website is active and working on a regular schedule
 
 on:
@@ -10,6 +10,8 @@ permissions: {}
 
 jobs:
   status:
+    name: Check status
+
     runs-on: ubuntu-latest
 
     environment:
