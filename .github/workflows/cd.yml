@@ -1,5 +1,5 @@
-name: Deploy
-# Deploys the website whenever changes are merged to main
+name: CD
+description: Deploys the website whenever changes are merged to main
 
 on:
   push:
@@ -10,7 +10,9 @@ permissions: {}
 
 jobs:
   checks:
-    if: ${{ github.event_name == 'push' }}
+    name: Checks
+
+    if: github.event_name == 'push'
 
     runs-on: ubuntu-latest
 
@@ -27,6 +29,8 @@ jobs:
           allowed-conclusions: success
 
   deploy:
+    name: Deploy
+
     needs: checks
 
     runs-on: ubuntu-latest
@@ -45,10 +49,11 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: .nvmrc
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm clean-install
 
       - name: Build
         run: npm run build
@@ -59,7 +64,7 @@ jobs:
           host: ${{ secrets.SCP_HOST }}
           username: ${{ secrets.SCP_USERNAME }}
           password: ${{ secrets.SCP_PASSWORD }}
-          source: "dist/*"
+          source: dist/*
           strip_components: 1
           target: ${{ secrets.SCP_TARGET }}
           rm: true

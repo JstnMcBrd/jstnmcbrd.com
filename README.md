@@ -1,7 +1,7 @@
 # jstnmcbrd.com
 
-[![Website status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/status.yml?logo=github&label=Website%20status)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
-[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/validate.yml)
+[![Status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/status.yml?logo=github&label=Status)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/status.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/jstnmcbrd.com/ci.yml?logo=github&label=CI)](https://github.com/JstnMcBrd/jstnmcbrd.com/actions/workflows/ci.yml)
 
 ## About
 
@@ -29,7 +29,7 @@ npm start
 Make sure to validate any changes before submitting them.
 ```sh
 npm run lint
-npm test
+npm run build
 ```
 
 ## Deployment

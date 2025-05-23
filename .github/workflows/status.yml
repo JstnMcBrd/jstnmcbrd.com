@@ -1,15 +1,17 @@
-name: Website status
-# Checks whether the website is active and working on a regular schedule
+name: Status
+description: Checks whether the website is active and working on a regular schedule
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Once a day
+    - cron: 0 0 * * * # Once a day
   workflow_dispatch:
 
 permissions: {}
 
 jobs:
   status:
+    name: Check status
+
     runs-on: ubuntu-latest
 
     environment:
