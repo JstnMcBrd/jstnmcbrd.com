@@ -12,13 +12,13 @@
 		"start": "vite"
 	},
 	"dependencies": {
-		"react": "^19.1.1",
+		"react": "^19.2.0",
 		"react-bootstrap": "^2.10.10",
 		"react-dom": "^19.1.1"
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^1.0.0",
-		"@types/react": "^19.1.9",
+		"@types/react": "^19.2.0",
 		"@types/react-dom": "^19.1.7",
 		"@vitejs/plugin-react-swc": "^4.0.0",
 		"eslint": "^8.57.1",
