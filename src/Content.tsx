@@ -30,7 +30,7 @@ export function Content(): JSX.Element {
 								setCount(c => c + 1);
 							}}
 							>
-								{`count is ${count}`}
+								{`count is ${String(count)}`}
 							</Button>
 							<p className="mb-0">
 								{'Edit '}

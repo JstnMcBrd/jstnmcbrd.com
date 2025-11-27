@@ -31,7 +31,7 @@ export function ColorModeSelector({ breakpoint }: Props): JSX.Element {
 		return `d-${size}-none`;
 	}
 
-	const [localColorMode, setLocalColorMode] = useState(getColorMode());
+	const [localColorMode, setLocalColorMode] = useState(() => getColorMode());
 
 	useEffect(() => {
 		setColorMode(localColorMode);

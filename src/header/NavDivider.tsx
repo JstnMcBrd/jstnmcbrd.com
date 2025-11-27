@@ -21,7 +21,7 @@ export function NavDivider({ breakpoint }: Props): JSX.Element {
 			{/* When the navbar is collapsed, use a horizontal rule */}
 			<HorizontalRule className={appearWhenSmallerThan(breakpoint)}></HorizontalRule>
 			{/* When the navbar is normal, use a vertical rule */}
-			<VerticalRule className={`${disappearWhenSmallerThan(breakpoint)} h-100 mx-${xMargin}`}></VerticalRule>
+			<VerticalRule className={`${disappearWhenSmallerThan(breakpoint)} h-100 mx-${String(xMargin)}`}></VerticalRule>
 		</Nav.Item>
 	);
 }
@@ -30,6 +30,6 @@ function HorizontalRule({ className }: { className?: string }): JSX.Element {
 	return <hr className={className}></hr>;
 }
 
-function VerticalRule({ className }: { className?: string }): JSX.Element {
+function VerticalRule({ className = '' }: { className?: string }): JSX.Element {
 	return <div className={`vr ${className}`}></div>;
 }
