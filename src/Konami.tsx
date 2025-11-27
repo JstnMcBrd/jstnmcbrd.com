@@ -1,6 +1,9 @@
 import type { JSX } from 'react';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 /** https://en.wikipedia.org/wiki/Konami_Code */
 const konamiSequence = [
@@ -52,18 +55,14 @@ export function Konami(): JSX.Element {
 
 	return (
 		<Modal size="xl" centered show={show} onHide={handleClose}>
-			<Modal.Body
-				style={{
-					aspectRatio: '16/9',
-					maxHeight: '90vh', // 100vh causes a scrollbar to appear
-				}}
-			>
-				<iframe
+			<Modal.Body>
+				<LiteYouTubeEmbed
+					id={rickRollVideoId}
 					title="Rick Roll"
-					width="100%"
-					height="100%"
-					src={`https://www.youtube.com/embed/${rickRollVideoId}?autoplay=1`}
-					allow="autoplay"
+					lazyLoad
+					alwaysLoadIframe
+					// autoplay // Blocked for unmuted videos
+					params="autoplay=1" // Workaround
 				/>
 			</Modal.Body>
 		</Modal>
