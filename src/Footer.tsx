@@ -22,12 +22,17 @@ export function Footer(): JSX.Element {
 			<div>
 				{'Made with '}
 				{
-					technologies.map(({ logo: Logo, size }, index) => (
-						<Logo key={index} className={`mx-${techLogoSpacing}`} width={size} height={size} />
+					technologies.map(({ logo: Logo, size }) => (
+						<Logo
+							key={Logo.name}
+							className={`mx-${String(techLogoSpacing)}`}
+							width={size}
+							height={size}
+						/>
 					))
 				}
 				{' and '}
-				<span className={`ms-${techLogoSpacing}`}>❤️</span>
+				<span className={`ms-${String(techLogoSpacing)}`}>❤️</span>
 			</div>
 			Copyright &copy; Justin McBride
 			<a
