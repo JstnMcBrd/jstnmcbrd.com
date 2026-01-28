@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 
-import { GameJolt, GitHub, LinkedIn, TwitterX } from '../Icons.js';
+import { GameJolt, GitHub, LinkedIn, X } from '../Icons.js';
 
 const socials = [
 	{
@@ -18,9 +18,9 @@ const socials = [
 		icon: LinkedIn,
 	},
 	{
-		title: 'Twitter/X',
+		title: 'X (Twitter)',
 		href: 'https://x.com/JstnMcBrd',
-		icon: TwitterX,
+		icon: X,
 	},
 	{
 		title: 'Game Jolt',
