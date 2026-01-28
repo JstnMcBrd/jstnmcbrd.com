@@ -1,5 +1,5 @@
 name: CD
-description: Deploys the website whenever changes are merged to main
+# Deploys the website whenever changes are merged to main
 
 on:
   push:
