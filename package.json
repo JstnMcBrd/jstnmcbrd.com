@@ -12,14 +12,14 @@
 		"start": "vite"
 	},
 	"dependencies": {
-		"react": "^19.2.1",
+		"react": "^19.2.4",
 		"react-bootstrap": "^2.10.10",
 		"react-dom": "^19.2.1",
 		"react-lite-youtube-embed": "^3.3.3"
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^2.0.1",
-		"@types/react": "^19.2.7",
+		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react-swc": "^4.2.2",
 		"eslint": "^9.39.1",
