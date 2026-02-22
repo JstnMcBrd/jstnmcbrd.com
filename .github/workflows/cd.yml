@@ -26,7 +26,7 @@ jobs:
           ref: ${{ github.ref }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           running-workflow-name: Checks
-          allowed-conclusions: success
+          ignore-checks: Dependabot
 
   deploy:
     name: Deploy
