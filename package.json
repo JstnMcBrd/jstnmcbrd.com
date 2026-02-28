@@ -15,7 +15,7 @@
 		"react": "^19.2.1",
 		"react-bootstrap": "^2.10.10",
 		"react-dom": "^19.2.1",
-		"react-lite-youtube-embed": "^3.3.3"
+		"react-lite-youtube-embed": "^3.5.1"
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^2.0.1",
