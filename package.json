@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc -p tsconfig.build.json && vite build",
-		"lint": "eslint",
+		"lint": "eslint --flag unstable_native_nodejs_ts_config",
 		"preview": "vite preview",
 		"start": "vite"
 	},
@@ -23,8 +23,13 @@
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^6.0.1",
 		"eslint": "^9.39.1",
-		"jiti": "^2.6.1",
 		"typescript": "^5.9.3",
 		"vite": "^8.0.5"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=22.18.0"
+		}
 	}
 }
