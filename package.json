@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc -p tsconfig.build.json && vite build",
-		"lint": "eslint",
+		"lint": "eslint --flag unstable_native_nodejs_ts_config",
 		"preview": "vite preview",
 		"start": "vite"
 	},
