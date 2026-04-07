@@ -25,5 +25,11 @@
 		"eslint": "^9.39.1",
 		"typescript": "^5.9.3",
 		"vite": "^8.0.5"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=22.18.0"
+		}
 	}
 }
