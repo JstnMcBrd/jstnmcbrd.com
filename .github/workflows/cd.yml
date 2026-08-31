@@ -67,11 +67,9 @@ jobs:
           ping: ${{ secrets.SCP_HOST }}
 
       - name: Deploy
-        uses: appleboy/scp-action@ff85246acaad7bdce478db94a363cd2bf7c90345 # v1.0.0
-        with:
-          host: ${{ secrets.SCP_HOST }}
-          username: ${{ secrets.SCP_USERNAME }}
-          source: dist/*
-          strip_components: 1
-          target: ${{ secrets.SCP_TARGET }}
-          rm: true
+        env:
+          HOST: ${{ secrets.SCP_HOST }}
+          USERNAME: ${{ secrets.SCP_USERNAME }}
+          TARGET: ${{ secrets.SCP_TARGET }}
+          RSYNC_RSH: ssh -o StrictHostKeyChecking=accept-new
+        run: rsync -az --delete dist/ "$USERNAME@$HOST:${TARGET:?}/"
