@@ -5,6 +5,10 @@ export enum ColorMode {
 	Dark = 'dark',
 }
 
+function isColorMode(value: string): value is ColorMode {
+	return Object.values<string>(ColorMode).includes(value);
+}
+
 const LOCAL_STORAGE_KEY = 'color-mode';
 
 /**
@@ -31,7 +35,8 @@ function getDarkSchemeMediaQuery(): MediaQueryList {
  * If it has not been set, returns 'auto' as the default.
  */
 export function getColorMode(): ColorMode {
-	return localStorage.getItem(LOCAL_STORAGE_KEY) as ColorMode | null ?? ColorMode.Auto;
+	const stored = localStorage.getItem(LOCAL_STORAGE_KEY);
+	return stored && isColorMode(stored) ? stored : ColorMode.Auto;
 }
 
 /**
