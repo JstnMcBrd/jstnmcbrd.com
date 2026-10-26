@@ -2,8 +2,6 @@
 	"extends": "./tsconfig.json",
 	"include": ["src"],
 	"compilerOptions": {
-		"types": ["react", "react-dom"],
-
 		"noEmit": true,
 
 		"skipLibCheck": true, // FIXME https://github.com/react-bootstrap/react-bootstrap/issues/7049

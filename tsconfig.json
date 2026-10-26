@@ -11,6 +11,7 @@
 
 		"module": "esnext",
 		"moduleResolution": "bundler",
+		"types": ["react", "react-dom", "vite/client"],
 
 		"verbatimModuleSyntax": true,
 
